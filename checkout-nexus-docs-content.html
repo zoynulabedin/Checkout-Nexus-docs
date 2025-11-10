@@ -1,0 +1,2279 @@
+<!-- CHECKOUT NEXUS DOCUMENTATION CONTENT -->
+<!-- This file contains the complete documentation content sections -->
+
+<!-- SECTION 1: GETTING STARTED -->
+<article class="docs-article" id="section-1">
+    <header class="docs-header">
+        <h1 class="docs-heading">Getting Started <span class="docs-time">Last updated: November 2025</span></h1>
+        <section class="docs-intro">
+            <p>Welcome to Checkout Nexus, the comprehensive Shopify app designed to enhance and customize your checkout
+                experience. This documentation will guide you through all features and capabilities of Checkout Nexus to
+                help you create a seamless and personalized checkout flow for your customers.</p>
+        </section><!--//docs-intro-->
+    </header>
+
+    <section class="docs-section" id="item-1-1">
+        <h2 class="section-heading">Overview</h2>
+        <p>Checkout Nexus is a powerful Shopify checkout customization app that provides extensive control over your
+            checkout process. Built specifically for Shopify Plus merchants with access to checkout extensions, Checkout
+            Nexus enables you to create a tailored checkout experience that drives conversions and improves customer
+            satisfaction.</p>
+
+        <h5>Key Capabilities:</h5>
+        <ul>
+            <li><strong>Payment Customizations:</strong> Hide, rename, or reorder payment methods based on conditions
+            </li>
+            <li><strong>Shipping Customizations:</strong> Control shipping method visibility, add messages, and reorder
+                options</li>
+            <li><strong>Order Validations:</strong> Block suspicious orders based on address or customer data</li>
+            <li><strong>Upsell App Blocks:</strong> Display powerful checkout upsells and cross-sells</li>
+            <li><strong>Auto Gift/Product to Cart:</strong> Automatically add products based on conditions</li>
+            <li><strong>Surveys & Forms:</strong> Collect valuable customer information at checkout</li>
+            <li><strong>Checkout Extensions:</strong> Add custom elements like checkboxes, banners, and more</li>
+        </ul>
+
+        <div class="callout-block callout-block-info">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+                    Important Note
+                </h4>
+                <p>Checkout extensions are supported on the "Thank You" and "Order Status" pages. Payment, Shipping, and
+                    Order Validation customizations require the <strong>Monthly Advanced Plan</strong> and an active
+                    subscription.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-1-2">
+        <h2 class="section-heading">Features</h2>
+        <p>Checkout Nexus offers six main feature categories, each designed to give you complete control over your
+            checkout process:</p>
+
+        <h5>1. Payment Customizations</h5>
+        <p>Hide, modify, or reorder your payment options at checkout based on conditions like customer type, cart
+            attributes, or other variables.</p>
+        <ul>
+            <li>Hide payment methods conditionally</li>
+            <li>Change payment method names</li>
+            <li>Reorder payment method display order</li>
+        </ul>
+
+        <h5>2. Shipping Customizations</h5>
+        <p>Add a message or hide your shipping methods to control the customer experience.</p>
+        <ul>
+            <li>Hide shipping methods based on conditions</li>
+            <li>Display custom messages for specific shipping methods</li>
+            <li>Control the order in which shipping methods are displayed</li>
+        </ul>
+
+        <h5>3. Order Validations</h5>
+        <p>Block suspicious orders based on address or customer information to reduce fraud and chargebacks.</p>
+        <ul>
+            <li>Validate addresses (e.g., block P.O. Box addresses)</li>
+            <li>Set minimum cart total requirements</li>
+            <li>Create custom validation rules</li>
+            <li>Display custom error messages</li>
+        </ul>
+
+        <h5>4. Upsell App Blocks</h5>
+        <p>Drive more revenue with powerful checkout upsells and cross-sells. Display recommended products based on cart
+            contents.</p>
+        <ul>
+            <li>Manually select upsell products</li>
+            <li>Use automatic product recommendations from Shopify's engine</li>
+            <li>Set conditions for when upsells display</li>
+            <li>Add discount codes for upsell products</li>
+        </ul>
+
+        <h5>5. Automatic Gift Offers</h5>
+        <p>Automatically add free gifts or promotional products to carts at checkout.</p>
+        <ul>
+            <li>Add products based on conditions</li>
+            <li>Make products required or optional</li>
+            <li>Set trigger conditions (cart total, customer type, etc.)</li>
+        </ul>
+
+        <h5>6. Survey & Form Blocks</h5>
+        <p>Collect valuable customer information through customizable forms and surveys.</p>
+        <ul>
+            <li>Create custom surveys with multiple field types</li>
+            <li>Target specific customer segments</li>
+            <li>Text input, radio buttons, checkboxes, and more</li>
+        </ul>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-1-3">
+        <h2 class="section-heading">Subscription Plans</h2>
+        <p>Checkout Nexus offers different subscription tiers to match your business needs:</p>
+
+        <div class="table-responsive my-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Feature</th>
+                        <th scope="col">Free Plan</th>
+                        <th scope="col">Monthly Advanced Plan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Checkout Extensions</td>
+                        <td><i class="fas fa-check text-success"></i> Supported</td>
+                        <td><i class="fas fa-check text-success"></i> Supported</td>
+                    </tr>
+                    <tr>
+                        <td>Payment Customizations</td>
+                        <td><i class="fas fa-times text-danger"></i> Not Available</td>
+                        <td><i class="fas fa-check text-success"></i> Full Access</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping Customizations</td>
+                        <td><i class="fas fa-times text-danger"></i> Not Available</td>
+                        <td><i class="fas fa-check text-success"></i> Full Access</td>
+                    </tr>
+                    <tr>
+                        <td>Order Validations</td>
+                        <td><i class="fas fa-times text-danger"></i> Not Available</td>
+                        <td><i class="fas fa-check text-success"></i> Full Access</td>
+                    </tr>
+                    <tr>
+                        <td>Upsells</td>
+                        <td><i class="fas fa-check text-success"></i> Basic</td>
+                        <td><i class="fas fa-check text-success"></i> Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Auto Add Products</td>
+                        <td><i class="fas fa-check text-success"></i> Basic</td>
+                        <td><i class="fas fa-check text-success"></i> Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Surveys & Forms</td>
+                        <td><i class="fas fa-check text-success"></i> Unlimited</td>
+                        <td><i class="fas fa-check text-success"></i> Unlimited</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="callout-block callout-block-warning">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                    Subscription Required
+                </h4>
+                <p>Your store must be on the Monthly Advanced plan and have an active subscription to access checkout
+                    extensions. Payment, Shipping, and Order Validation customizations require the Monthly Advanced
+                    plan.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+    <section class="docs-section" id="item-1-4">
+        <h2 class="section-heading">Installation</h2>
+        <p>Getting started with Checkout Nexus is simple. Follow these comprehensive steps to install, configure, and
+            start using the app to enhance your Shopify checkout experience.</p>
+
+        <h5>Prerequisites</h5>
+        <p>Before installing Checkout Nexus, ensure you have:</p>
+        <ul>
+            <li><strong>Shopify Store:</strong> An active Shopify store (any plan)</li>
+            <li><strong>Admin Access:</strong> Admin permissions to install apps</li>
+            <li><strong>Shopify Plus (Optional):</strong> For advanced features like Payment/Shipping Customizations
+            </li>
+            <li><strong>Checkout Extensions Enabled:</strong> Available on Shopify Plus stores</li>
+        </ul>
+
+        <h5>Step 1: Install from Shopify App Store</h5>
+        <ol>
+            <li><strong>Access App Store:</strong> Visit the Shopify App Store at apps.shopify.com</li>
+            <li><strong>Search for App:</strong> Type "Checkout Nexus" in the search bar</li>
+            <li><strong>Select App:</strong> Click on the Checkout Nexus app from the search results</li>
+            <li><strong>Review Details:</strong> Read the app description, pricing, and reviews</li>
+            <li><strong>Install App:</strong> Click the "Add app" or "Install" button</li>
+            <li><strong>Review Permissions:</strong> Carefully review the requested permissions:
+                <ul>
+                    <li>Read and modify checkout settings</li>
+                    <li>Access order information</li>
+                    <li>Read customer data</li>
+                    <li>Read product and cart information</li>
+                </ul>
+            </li>
+            <li><strong>Confirm Installation:</strong> Click "Install app" to grant permissions</li>
+            <li><strong>Wait for Setup:</strong> The app will install and configure itself (usually takes 10-30 seconds)
+            </li>
+            <li><strong>Access Dashboard:</strong> You'll be automatically redirected to the Checkout Nexus dashboard
+            </li>
+        </ol>
+
+        <div class="callout-block callout-block-info">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+                    Direct Access
+                </h4>
+                <p>After installation, access Checkout Nexus anytime from your Shopify admin by clicking
+                    <strong>Apps</strong> in the left sidebar, then selecting <strong>Checkout Nexus</strong>.</p>
+            </div>
+        </div>
+
+        <h5>Step 2: Initial Setup & Dashboard Overview</h5>
+        <p>Once installed, you'll see the Checkout Nexus main dashboard featuring:</p>
+
+        <h6>Dashboard Components:</h6>
+        <ul>
+            <li><strong>Header Bar:</strong>
+                <ul>
+                    <li>App branding and logo (Checkout Nexus)</li>
+                    <li>"Manage Subscription" button (top right)</li>
+                    <li>Store name display (e.g., "appaza-checkout")</li>
+                </ul>
+            </li>
+            <li><strong>Feature Cards:</strong> Six main feature categories with "Manage" buttons:
+                <ol>
+                    <li><strong>Payment Customizations:</strong> Hide, modify, or reorder payment options</li>
+                    <li><strong>Shipping Customizations:</strong> Add messages or hide shipping methods</li>
+                    <li><strong>Order Validations:</strong> Block suspicious orders based on address or customer</li>
+                    <li><strong>Upsell App Blocks:</strong> Drive revenue with powerful checkout upsells</li>
+                    <li><strong>Automatic Gift Offers:</strong> Automatically add free gifts or promotional products
+                    </li>
+                    <li><strong>Survey & Form Blocks:</strong> Collect customer information through customizable forms
+                    </li>
+                </ol>
+            </li>
+            <li><strong>Extensions Section:</strong> Browse and load available checkout extensions</li>
+            <li><strong>Tutorial Videos:</strong> "Turn your side-project into a business" course link</li>
+            <li><strong>Support Access:</strong> Chat button (with notification badge) at bottom right</li>
+            <li><strong>Footer Links:</strong> "Contact Us" and feature request options</li>
+        </ul>
+
+        <h5>Step 3: Choose Your Subscription Plan</h5>
+        <ol>
+            <li><strong>Access Subscription:</strong> Click "Manage Subscription" button in the top right corner</li>
+            <li><strong>Review Plans:</strong> Compare Free Plan vs Monthly Advanced Plan features</li>
+            <li><strong>Free Plan Includes:</strong>
+                <ul>
+                    <li>Basic checkout extensions</li>
+                    <li>Unlimited surveys and forms</li>
+                    <li>Basic upsells and auto-add products</li>
+                    <li>Access to extension library</li>
+                </ul>
+            </li>
+            <li><strong>Monthly Advanced Plan Includes:</strong>
+                <ul>
+                    <li>Everything in Free Plan</li>
+                    <li>Payment customizations (hide, rename, reorder)</li>
+                    <li>Shipping customizations (hide, add messages, reorder)</li>
+                    <li>Order validations (fraud prevention, address blocking)</li>
+                    <li>Advanced upsell features with discount codes</li>
+                    <li>Advanced auto-add product features</li>
+                    <li>Priority support</li>
+                </ul>
+            </li>
+            <li><strong>Select Plan:</strong> Choose the plan that best fits your business needs</li>
+            <li><strong>Enter Payment:</strong> For Monthly Advanced Plan, enter payment details</li>
+            <li><strong>Confirm Subscription:</strong> Review and confirm your subscription</li>
+            <li><strong>Activate:</strong> Your chosen plan will activate immediately</li>
+        </ol>
+
+        <div class="callout-block callout-block-warning">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                    Important: Plan Requirements
+                </h4>
+                <p>Payment, Shipping, and Order Validation customizations require the <strong>Monthly Advanced
+                        Plan</strong> and an active subscription. You'll see an "Upgrade required" message when trying
+                    to access these features on the Free Plan.</p>
+            </div>
+        </div>
+
+        <h5>Step 4: Understanding the Notification System</h5>
+        <p>Checkout Nexus uses a notification banner system to keep you informed:</p>
+        <ul>
+            <li><strong>Green Success Banner:</strong> "Note: Checkout extensions are supported on the 'Thank You' and
+                'Order Status' pages..."</li>
+            <li><strong>Red Warning Banner:</strong> "Upgrade required — your store must be on the Monthly Advanced
+                plan..."</li>
+            <li>Notifications can be dismissed by clicking the X button</li>
+            <li>Important notices appear at the top of the dashboard</li>
+        </ul>
+
+        <h5>Step 5: Configure Your First Customization</h5>
+        <p>Now that installation is complete, create your first customization:</p>
+
+        <h6>Option A: Start with Surveys (Free Feature)</h6>
+        <ol>
+            <li>Click <strong>"Manage"</strong> on the "Survey & Form Blocks" card</li>
+            <li>Click <strong>"Create Survey"</strong> button (top right)</li>
+            <li>Follow the 4-step survey builder workflow</li>
+            <li>Add form elements (text input, checkboxes, etc.)</li>
+            <li>Configure customer targeting</li>
+            <li>Save and preview your survey</li>
+        </ol>
+
+        <h6>Option B: Start with Upsells (Free Feature)</h6>
+        <ol>
+            <li>Click <strong>"Manage"</strong> on the "Upsell App Blocks" card</li>
+            <li>Review the performance metrics dashboard</li>
+            <li>Click <strong>"Create Upsell"</strong> or <strong>"Other Options"</strong></li>
+            <li>Name your upsell campaign</li>
+            <li>Select products or enable automatic recommendations</li>
+            <li>Set conditions and customer eligibility</li>
+            <li>Save and activate</li>
+        </ol>
+
+        <h6>Option C: Start with Payment Customizations (Requires Upgrade)</h6>
+        <ol>
+            <li>Click <strong>"Manage"</strong> on the "Payment Customizations" card</li>
+            <li>If not on Monthly Advanced Plan, you'll see upgrade prompt</li>
+            <li>After upgrading, click <strong>"Create Customizations"</strong></li>
+            <li>Choose from: Hide, Change Name, or Reorder Payment Methods</li>
+            <li>Configure your customization with conditions</li>
+            <li>Save and the changes will apply immediately</li>
+        </ol>
+
+        <h5>Step 6: Enable Checkout Extensions (If Applicable)</h5>
+        <p>For certain features, you'll need to add extensions to your checkout:</p>
+        <ol>
+            <li><strong>Access Checkout Editor:</strong> From Shopify Admin → Settings → Checkout</li>
+            <li><strong>Customize:</strong> Click "Customize" button for checkout page</li>
+            <li><strong>Add App Block:</strong> Look for Checkout Nexus blocks in the left panel</li>
+            <li><strong>Drag and Drop:</strong> Add desired blocks to your checkout layout</li>
+            <li><strong>Configure Block:</strong> Click on the block to adjust settings</li>
+            <li><strong>Position Block:</strong> Move it to the desired location on the page</li>
+            <li><strong>Save Changes:</strong> Click "Save" in the top right</li>
+        </ol>
+
+        <h5>Accessing Tutorial Videos</h5>
+        <p>Each feature page includes a tutorial video. Look for:</p>
+        <ul>
+            <li><strong>Video Thumbnails:</strong> Blue/teal colored cards with play button icon</li>
+            <li><strong>Video Length:</strong> Displayed on each thumbnail (e.g., "1:20", "3:13")</li>
+            <li><strong>Topics Covered:</strong> Feature-specific walkthrough and best practices</li>
+            <li><strong>"Learn more" Button:</strong> Click to watch the full tutorial</li>
+        </ul>
+
+        <h5>Getting Help</h5>
+        <p>If you need assistance during or after installation:</p>
+        <ul>
+            <li><strong>Support Chat:</strong> Click the green chat button (bottom right) with notification badge</li>
+            <li><strong>Contact Us:</strong> Use the "Contact Us" link at the bottom of any page</li>
+            <li><strong>Feature Requests:</strong> Click "Don't see what you are looking for? Contact us" in
+                customization modals</li>
+            <li><strong>Documentation:</strong> Refer to this guide for detailed instructions</li>
+            <li><strong>Tutorial Videos:</strong> Watch step-by-step video guides on each feature page</li>
+        </ul>
+
+        <div class="callout-block callout-block-success">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-thumbs-up"></i>
+                    </span>
+                    Pro Tips for Success
+                </h4>
+                <ul class="mb-0">
+                    <li><strong>Start Simple:</strong> Begin with one feature (like surveys) before expanding</li>
+                    <li><strong>Watch Videos:</strong> The tutorial videos provide visual step-by-step guidance</li>
+                    <li><strong>Test Thoroughly:</strong> Always test customizations in a development store first</li>
+                    <li><strong>Monitor Performance:</strong> Check analytics regularly to measure impact</li>
+                    <li><strong>Read Notifications:</strong> Pay attention to banner messages for important updates</li>
+                    <li><strong>Backup Strategy:</strong> Document your customizations for future reference</li>
+                </ul>
+            </div>
+        </div>
+
+        <h5>Next Steps After Installation</h5>
+        <p>Once installed and configured, proceed to:</p>
+        <ol>
+            <li><strong>Explore Features:</strong> Click through each feature category to understand capabilities</li>
+            <li><strong>Plan Strategy:</strong> Decide which features align with your business goals</li>
+            <li><strong>Create Customizations:</strong> Build your first customization using the guides below</li>
+            <li><strong>Test Checkout:</strong> Place test orders to verify customizations work correctly</li>
+            <li><strong>Optimize:</strong> Use analytics data to refine and improve your customizations</li>
+        </ol>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-1-5">
+        <h2 class="section-heading">How to Create & Update Customizations</h2>
+        <p>This section provides a comprehensive guide to creating and managing customizations across all Checkout Nexus
+            features. Understanding the common interface elements and workflows will help you work efficiently.</p>
+
+        <h5>Universal Customization Workflow</h5>
+        <p>All customizations in Checkout Nexus follow a similar pattern:</p>
+
+        <div class="docs-code-block">
+            <pre
+                class="shadow-lg rounded"><code>1. Navigate to Feature Page → 2. Create New → 3. Configure Settings → 4. Set Conditions → 5. Save & Activate</code></pre>
+        </div>
+
+        <h5>Common Interface Elements</h5>
+
+        <h6>1. Feature List Pages</h6>
+        <p>Each feature has a list page displaying existing customizations:</p>
+        <ul>
+            <li><strong>Header:</strong> Feature name and description</li>
+            <li><strong>Tutorial Video:</strong> Embedded video with thumbnail and duration</li>
+            <li><strong>"Learn more" Link:</strong> Access to detailed guide</li>
+            <li><strong>Create Button:</strong> "Create Customizations", "Create Survey", "Create Upsell", etc.</li>
+            <li><strong>"Other Options" Dropdown:</strong> Additional actions and settings</li>
+            <li><strong>Performance Metrics:</strong> (For Upsells) Shows last 30 days statistics</li>
+            <li><strong>Table/Card View:</strong> Lists all existing customizations with details:
+                <ul>
+                    <li>Name/Title column</li>
+                    <li>Status indicator (Enabled/Disabled badge)</li>
+                    <li>Type/Condition information</li>
+                    <li>Action buttons (Edit, Delete)</li>
+                </ul>
+            </li>
+            <li><strong>Empty State:</strong> Message when no customizations exist (e.g., "No Upsells")</li>
+        </ul>
+
+        <h6>2. Create/Edit Modal or Page</h6>
+        <p>When creating or editing a customization, you'll see:</p>
+        <ul>
+            <li><strong>Back Arrow:</strong> Returns to the feature list page</li>
+            <li><strong>Feature Title:</strong> Clear heading showing what you're creating</li>
+            <li><strong>Save Button:</strong> Top right corner (may be disabled until required fields are filled)</li>
+            <li><strong>Info Banner:</strong> Blue notification box with important notes or setup instructions</li>
+            <li><strong>Step Indicators:</strong> (For multi-step processes like surveys)
+                <ul>
+                    <li>Step 1: Survey Title</li>
+                    <li>Step 2: Add Form Elements</li>
+                    <li>Step 3: Configure Form Elements</li>
+                    <li>Step 4: Advanced Conditions</li>
+                </ul>
+            </li>
+            <li><strong>Form Fields:</strong> Input fields with labels and placeholders</li>
+            <li><strong>Dropdown Selectors:</strong> For choosing options (payment methods, shipping methods, etc.)</li>
+            <li><strong>Condition Builder:</strong> Interface for adding multiple conditions</li>
+            <li><strong>Summary Panel:</strong> (Right side) Shows preview or condition summary</li>
+        </ul>
+
+        <h6>3. Customization Name Field</h6>
+        <p>Every customization requires a name:</p>
+        <ul>
+            <li><strong>Purpose:</strong> Internal reference only (NOT visible to customers)</li>
+            <li><strong>Best Practice:</strong> Use descriptive names that explain the customization</li>
+            <li><strong>Examples:</strong>
+                <ul>
+                    <li>"Hide COD for orders over $100"</li>
+                    <li>"Add free sample for high-value customers"</li>
+                    <li>"Block P.O. Box addresses"</li>
+                    <li>"B2B customers - Special pricing message"</li>
+                </ul>
+            </li>
+            <li><strong>Character Limit:</strong> Usually generous (no strict limit shown)</li>
+            <li><strong>Required Field:</strong> Must be filled before saving</li>
+        </ul>
+
+        <h6>4. Condition Builder</h6>
+        <p>Most features include a powerful condition builder:</p>
+        <ul>
+            <li><strong>Condition Rows:</strong> Each row represents one condition
+                <ul>
+                    <li>Field dropdown (Cart Total, Customer Type, Product, etc.)</li>
+                    <li>Operator dropdown (is, is not, is greater than, etc.)</li>
+                    <li>Value input (text field, dropdown, or product selector)</li>
+                    <li>Delete button (trash icon) to remove condition</li>
+                </ul>
+            </li>
+            <li><strong>"+ Add condition" Button:</strong> Creates a new condition row</li>
+            <li><strong>Logic:</strong> Multiple conditions use AND logic (all must be true)</li>
+            <li><strong>Condition Types Available:</strong>
+                <ul>
+                    <li>Cart Total (numeric value with currency)</li>
+                    <li>Customer Type (B2B, Non-B2B, All Customers)</li>
+                    <li>Customer Tag (specific tags)</li>
+                    <li>Cart Attribute (custom attributes)</li>
+                    <li>Product (specific products in cart)</li>
+                    <li>Shipping Country (geographic targeting)</li>
+                    <li>Shipping Method (specific methods)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h6>5. Summary Panel</h6>
+        <p>Many creation interfaces include a right-side summary panel:</p>
+        <ul>
+            <li><strong>Preview Section:</strong> Shows how customization will appear (for surveys)</li>
+            <li><strong>Conditions Display:</strong> Lists active conditions in human-readable format
+                <ul>
+                    <li>Example: "carttotal isgreaterthan $0.00"</li>
+                    <li>Example: "customertype is B2B"</li>
+                    <li>Example: "product is 1 products"</li>
+                </ul>
+            </li>
+            <li><strong>Summary Cards:</strong> Show key details:
+                <ul>
+                    <li>When This Condition is Met</li>
+                    <li>Customer Eligibility</li>
+                    <li>Run Location (for validations)</li>
+                    <li>Shipping Method tags</li>
+                </ul>
+            </li>
+            <li><strong>Real-time Updates:</strong> Changes reflect immediately as you edit</li>
+        </ul>
+
+        <h5>Creating Specific Customization Types</h5>
+
+        <h6>Payment Customizations</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code><strong>To Hide a Payment Method:</strong>
+1. Payment Customizations → Create Customizations
+2. Select "Hide Payment Method" from modal
+3. Enter customization name
+4. Search/select payment method to hide
+5. Add conditions (optional)
+6. Save
+
+<strong>To Change Payment Name:</strong>
+1. Payment Customizations → Create Customizations
+2. Select "Change Name of Payment Method"
+3. Enter customization name
+4. Select payment method
+5. Enter new name in "New Name" field
+6. Add conditions (optional)
+7. Save
+
+<strong>To Reorder Payment Methods:</strong>
+1. Payment Customizations → Create Customizations
+2. Select "Reorder Payment Method"
+3. Enter customization name
+4. Set order number (1, 2, 3, etc.)
+5. Select payment method to reorder
+6. Add conditions (optional)
+7. Save</code></pre>
+        </div>
+
+        <h6>Shipping Customizations</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code><strong>To Hide a Shipping Method:</strong>
+1. Shipping Customizations → Create Customizations
+2. Select "Hide Shipping Method"
+3. Enter customization name
+4. Search/enter shipping method name
+5. Add conditions
+6. Save
+
+<strong>To Add Shipping Message:</strong>
+1. Shipping Customizations → Create Customizations
+2. Select "Shipping Method Message"
+3. Enter customization name
+4. Select shipping method
+5. Type custom message
+6. Check/uncheck "Prefix Shipping Method Name to Message"
+7. Add conditions (optional)
+8. Save
+
+<strong>To Reorder Shipping Methods:</strong>
+1. Shipping Customizations → Create Customizations
+2. Select "Reorder Shipping Methods"
+3. Enter customization name
+4. Set order number
+5. Select shipping method
+6. Add conditions
+7. Save</code></pre>
+        </div>
+
+        <h6>Order Validations</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code><strong>To Create a Validation:</strong>
+1. Order Validations → Create Validation
+2. Enter customization name (internal)
+3. Write error message for customers
+4. (Optional) Click "Show Translation" for multilingual support
+5. Select error message location (default: Top of Checkout)
+6. Add validation conditions:
+   - Cart Total (min/max amounts)
+   - Address patterns (P.O. Box blocking)
+   - Customer type restrictions
+7. Select run location:
+   - Checkout Completion (on "Pay Now" click)
+   - Checkout Interaction (as customer types)
+8. Save</code></pre>
+        </div>
+
+        <h6>Upsells</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code><strong>To Create an Upsell:</strong>
+1. All Upsells → Create Upsell
+2. Enter name for upsell (internal)
+3. Set status (Active/Inactive toggle)
+4. Choose condition to display:
+   - Always Displaying Upsells
+   - No Condition
+   - Custom conditions
+5. Set priority number (lower = shown first, default: 99)
+6. Select "When This Condition is Met"
+7. Choose Product Selection Strategy:
+   - Manually select products (then click "Add Product")
+   - Use automatic recommendations from Shopify
+8. Set customer eligibility (All/B2B/Non-B2B)
+9. (Optional) Enable Country Filter
+10. Save</code></pre>
+        </div>
+
+        <h6>Auto Add Gift/Product</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code><strong>To Create Auto-Add Product:</strong>
+1. Auto Gift/Product to Cart → Create gift
+2. Enter customization name
+3. Select condition:
+   - Always Add Product
+   - Conditional (based on cart, customer, etc.)
+4. Click "Select Product" for each product slot (1, 2, 3)
+5. Configure optional settings:
+   ☐ Make product required (blocks checkout if removed)
+   ☐ Show as optional offer (allow customer choice)
+   ☐ Remove product when condition is no longer met
+6. Set customer eligibility
+7. Save
+8. **Important:** Add Auto Add extension in Shopify Checkout Editor</code></pre>
+        </div>
+
+        <h6>Surveys & Forms</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code><strong>To Create a Survey:</strong>
+1. All Surveys → Create Survey
+2. **Step 1:** Enter survey title (internal only)
+3. **Step 2:** Add Form Elements
+   - Click "Add Form Element"
+   - Choose type: Text Input, Radio, Checkbox, Dropdown, etc.
+   - Repeat for all fields needed
+4. **Step 3:** Configure Form Elements
+   - Set field label (visible to customers)
+   - Set placeholder text
+   - Toggle required/optional
+   - Drag to reorder fields
+5. **Step 4:** Advanced Conditions
+   - Set customer eligibility (All/B2B/Non-B2B)
+   - Add display conditions
+6. Review in Preview panel
+7. Save</code></pre>
+        </div>
+
+        <h5>Updating Existing Customizations</h5>
+
+        <h6>How to Edit:</h6>
+        <ol>
+            <li>Navigate to the feature list page</li>
+            <li>Find the customization in the table/list</li>
+            <li>Click the <strong>"Edit"</strong> button (pencil icon)</li>
+            <li>Make your changes to any field or condition</li>
+            <li>Review the summary panel to verify changes</li>
+            <li>Click <strong>"Save"</strong> to apply updates</li>
+            <li>Changes take effect immediately</li>
+        </ol>
+
+        <h6>How to Enable/Disable:</h6>
+        <ul>
+            <li><strong>Toggle Switch:</strong> Many customizations have an Enable/Disable toggle</li>
+            <li><strong>Status Badge:</strong> Shows current state (Green "Enabled" or Red "Disabled")</li>
+            <li><strong>Quick Action:</strong> Toggle without entering edit mode</li>
+            <li><strong>Use Case:</strong> Temporarily disable without deleting (e.g., seasonal campaigns)</li>
+        </ul>
+
+        <h6>How to Delete:</h6>
+        <ol>
+            <li>Locate the customization in the list</li>
+            <li>Click the <strong>"Delete"</strong> button (trash icon) or within Edit mode</li>
+            <li>Confirm deletion in the popup dialog</li>
+            <li><strong>Warning:</strong> This action cannot be undone</li>
+            <li>Customization is removed immediately</li>
+        </ol>
+
+        <h5>Testing Your Customizations</h5>
+
+        <h6>Test Checklist:</h6>
+        <ul>
+            <li>☐ <strong>Create Test Order:</strong> Add products to cart and proceed to checkout</li>
+            <li>☐ <strong>Verify Conditions:</strong> Ensure customization appears/works when conditions are met</li>
+            <li>☐ <strong>Test Negative Cases:</strong> Verify customization doesn't appear when conditions aren't met
+            </li>
+            <li>☐ <strong>Check All Devices:</strong> Test on desktop, tablet, and mobile</li>
+            <li>☐ <strong>Test Different Customers:</strong> Try with B2B vs retail, logged in vs guest</li>
+            <li>☐ <strong>Verify Messaging:</strong> Check that error messages, banners, etc. display correctly</li>
+            <li>☐ <strong>Test Edge Cases:</strong> Try boundary values (e.g., exactly $100 when condition is > $100)
+            </li>
+            <li>☐ <strong>Review Analytics:</strong> After going live, monitor performance metrics</li>
+        </ul>
+
+        <h5>Common Mistakes to Avoid</h5>
+        <div class="table-responsive my-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mistake</th>
+                        <th>Impact</th>
+                        <th>Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Not adding checkout extension after creating auto-add product</td>
+                        <td>Feature won't work</td>
+                        <td>Always add the extension in Shopify Checkout Editor</td>
+                    </tr>
+                    <tr>
+                        <td>Forgetting to enable/activate customization</td>
+                        <td>Customization doesn't appear</td>
+                        <td>Check status toggle is set to "Enabled" or "Active"</td>
+                    </tr>
+                    <tr>
+                        <td>Using overly complex conditions</td>
+                        <td>Customization rarely triggers</td>
+                        <td>Start simple, add conditions gradually based on testing</td>
+                    </tr>
+                    <tr>
+                        <td>Not testing on mobile</td>
+                        <td>Poor mobile checkout experience</td>
+                        <td>Always test on actual mobile devices</td>
+                    </tr>
+                    <tr>
+                        <td>Creating too many upsells</td>
+                        <td>Overwhelming checkout experience</td>
+                        <td>Limit to 3-5 upsell products, use priority effectively</td>
+                    </tr>
+                    <tr>
+                        <td>Vague error messages in validations</td>
+                        <td>Customer confusion and cart abandonment</td>
+                        <td>Write clear, actionable error messages</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Best Practices for Creating Customizations</h5>
+        <ul>
+            <li><strong>Descriptive Names:</strong> Use names that clearly describe what the customization does</li>
+            <li><strong>Document Conditions:</strong> Keep notes on why you set specific conditions</li>
+            <li><strong>Start Small:</strong> Begin with one customization, test thoroughly, then expand</li>
+            <li><strong>Monitor Performance:</strong> Regularly check analytics to measure impact</li>
+            <li><strong>Update Regularly:</strong> Refine customizations based on customer behavior data</li>
+            <li><strong>Use Priority Wisely:</strong> Set strategic priority numbers for upsells</li>
+            <li><strong>Customer-First:</strong> Always consider the customer experience when creating rules</li>
+            <li><strong>Backup Your Work:</strong> Take screenshots or document your customizations</li>
+        </ul>
+
+        <div class="callout-block callout-block-success">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-rocket"></i>
+                    </span>
+                    Quick Start Recommendation
+                </h4>
+                <p><strong>New to Checkout Nexus?</strong> We recommend starting with these customizations in order:</p>
+                <ol class="mb-0">
+                    <li><strong>Survey:</strong> Create a simple customer feedback survey (Free, easy to test)</li>
+                    <li><strong>Upsell:</strong> Add 2-3 complementary products as upsells (Free, revenue impact)</li>
+                    <li><strong>Order Validation:</strong> Block P.O. Box addresses if relevant (Requires upgrade)</li>
+                    <li><strong>Payment Customization:</strong> Hide/reorder payment methods (Requires upgrade)</li>
+                    <li><strong>Auto-Add Product:</strong> Offer free gift at cart threshold (Free/Paid features)</li>
+                </ol>
+            </div>
+        </div>
+    </section><!--//section-->
+</article><!--//docs-article-->
+
+<!-- SECTION 2: PAYMENT CUSTOMIZATIONS -->
+<article class="docs-article" id="section-2">
+    <header class="docs-header">
+        <h1 class="docs-heading">Payment Customizations</h1>
+        <section class="docs-intro">
+            <p>Payment Customizations allow you to hide, modify, or reorder your payment options at checkout. This
+                feature helps you create a cleaner checkout experience and control which payment methods are available
+                based on specific conditions.</p>
+        </section><!--//docs-intro-->
+    </header>
+
+    <section class="docs-section" id="item-2-1">
+        <h2 class="section-heading">Hide Payment Method</h2>
+        <p>Hide specific payment methods from customers based on conditions like cart total, customer type, or custom
+            attributes.</p>
+
+        <h5>How to Hide a Payment Method:</h5>
+        <ol>
+            <li>Navigate to <strong>Payment Customizations</strong> in the Checkout Nexus dashboard</li>
+            <li>Click <strong>Create Customizations</strong></li>
+            <li>Select <strong>Hide Payment Method</strong> from the customization options</li>
+            <li>Enter a customization name (not visible to customers)</li>
+            <li>Search for and select the payment method you want to hide</li>
+            <li>Set your conditions using the condition builder</li>
+            <li>Click the <strong>+ Add condition</strong> button to add multiple conditions</li>
+            <li>Click <strong>Save</strong> to activate</li>
+        </ol>
+
+        <h5>Example Use Cases:</h5>
+        <ul>
+            <li><strong>Hide Cash on Delivery:</strong> Hide COD for orders over $100 to reduce fraud</li>
+            <li><strong>Cart Total Restrictions:</strong> Only show certain payment methods for high-value orders</li>
+            <li><strong>Customer Type:</strong> Hide payment methods for B2B customers vs retail customers</li>
+            <li><strong>Geographic Restrictions:</strong> Show/hide payment methods based on shipping country</li>
+        </ul>
+
+        <h5>Condition Options:</h5>
+        <div class="table-responsive my-4">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Condition Type</th>
+                        <th>Operators</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cart Total</td>
+                        <td>is greater than, is less than, equals</td>
+                        <td>Base conditions on the cart subtotal amount</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Type</td>
+                        <td>is, is not</td>
+                        <td>Target specific customer types (B2B, Non-B2B, All Customers)</td>
+                    </tr>
+                    <tr>
+                        <td>Cart Attribute</td>
+                        <td>is present, is not present, equals</td>
+                        <td>Use custom cart attributes to trigger rules</td>
+                    </tr>
+                    <tr>
+                        <td>Product</td>
+                        <td>is, is not</td>
+                        <td>Conditions based on specific products in cart</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="callout-block callout-block-info">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+                    Pro Tip
+                </h4>
+                <p>You can combine multiple conditions using AND logic. All conditions must be met for the payment
+                    method to be hidden.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-2-2">
+        <h2 class="section-heading">Change Payment Method Name</h2>
+        <p>Rename payment methods to provide clearer descriptions or localized names for your customers.</p>
+
+        <h5>How to Change a Payment Method Name:</h5>
+        <ol>
+            <li>Navigate to <strong>Payment Customizations</strong></li>
+            <li>Click <strong>Create Customizations</strong></li>
+            <li>Select <strong>Change Name of Payment Method</strong></li>
+            <li>Enter a customization name (internal use only)</li>
+            <li>Search for and select the payment method you want to rename</li>
+            <li>Enter the new name in the "New Name" field</li>
+            <li>Set conditions for when this name should appear (optional)</li>
+            <li>Click <strong>Save</strong></li>
+        </ol>
+
+        <h5>Example Scenarios:</h5>
+        <ul>
+            <li><strong>Add Context:</strong> Change "COD" to "Cash on Delivery"</li>
+            <li><strong>Localization:</strong> Display payment names in the customer's language</li>
+            <li><strong>Promotional Names:</strong> Add "Free Processing" or "No Fees" to specific methods</li>
+            <li><strong>Clarification:</strong> Rename technical payment names to customer-friendly versions</li>
+        </ul>
+
+        <div class="callout-block callout-block-warning">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-lightbulb"></i>
+                    </span>
+                    Best Practice
+                </h4>
+                <p>Type the payment method name in the search box and press Enter to add a custom method to the list if
+                    it doesn't appear in the dropdown.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-2-3">
+        <h2 class="section-heading">Reorder Payment Methods</h2>
+        <p>Control the order in which payment methods are displayed to customers. Put your preferred payment methods at
+            the top to encourage their use.</p>
+
+        <h5>How to Reorder Payment Methods:</h5>
+        <ol>
+            <li>Go to <strong>Payment Customizations</strong></li>
+            <li>Click <strong>Create Customizations</strong></li>
+            <li>Select <strong>Reorder Payment Method</strong></li>
+            <li>Enter a customization name</li>
+            <li>Enter the order number (1 = first, 2 = second, etc.)</li>
+            <li>Search and select the payment methods to reorder</li>
+            <li>Add conditions if you want the reordering to be conditional</li>
+            <li>Click <strong>Save</strong></li>
+        </ol>
+
+        <h5>Strategic Ordering:</h5>
+        <ul>
+            <li><strong>Lowest Fees First:</strong> Place payment methods with lower processing fees at the top</li>
+            <li><strong>Popular Methods:</strong> Put the most commonly used methods first</li>
+            <li><strong>Regional Preferences:</strong> Reorder based on customer location</li>
+            <li><strong>B2B vs Retail:</strong> Show different ordering for different customer types</li>
+        </ul>
+
+        <h5>Customization Name Tag:</h5>
+        <p>Each customization displays a unique name tag showing the conditions. For example:
+            <code>customertype is B2B</code>
+        </p>
+    </section><!--//section-->
+</article><!--//docs-article-->
+
+<!-- SECTION 3: SHIPPING CUSTOMIZATIONS -->
+<article class="docs-article" id="section-3">
+    <header class="docs-header">
+        <h1 class="docs-heading">Shipping Customizations</h1>
+        <section class="docs-intro">
+            <p>Shipping Customizations give you control over how shipping methods are displayed and what information
+                customers see. Hide methods based on conditions, add custom messages, or reorder shipping options.</p>
+        </section><!--//docs-intro-->
+    </header>
+
+    <section class="docs-section" id="item-3-1">
+        <h2 class="section-heading">Hide Shipping Method</h2>
+        <p>Conditionally hide shipping methods from customers based on cart contents, customer type, product selection,
+            or other factors.</p>
+
+        <h5>Setup Instructions:</h5>
+        <ol>
+            <li>Navigate to <strong>Shipping Customizations</strong></li>
+            <li>Click <strong>Create Customizations</strong></li>
+            <li>Select <strong>Hide Shipping Method</strong></li>
+            <li>Enter a customization name (internal reference)</li>
+            <li>Search or enter a custom shipping method name</li>
+            <li>Add conditions using the condition builder</li>
+            <li>Click <strong>+ Add condition</strong> for multiple rules</li>
+            <li>Click <strong>Save</strong> to activate</li>
+        </ol>
+
+        <h5>Common Use Cases:</h5>
+        <ul>
+            <li><strong>Product-Based:</strong> Hide expensive shipping for specific fragile products</li>
+            <li><strong>Cart Value:</strong> Hide standard shipping when free shipping threshold is met</li>
+            <li><strong>Geographic:</strong> Restrict certain shipping methods by country/region</li>
+            <li><strong>Customer Segment:</strong> Show different shipping options for wholesale vs retail</li>
+        </ul>
+
+        <h5>Example Condition:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>IF Product is "Fragile Item"
+AND Cart Total is greater than $50.00
+THEN Hide "Standard Ground Shipping"</code></pre>
+        </div>
+
+        <div class="callout-block callout-block-success">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                    Summary Display
+                </h4>
+                <p>Your customization conditions are displayed in the summary panel on the right side. Example:
+                    <code>product is 1 products</code>
+                </p>
+            </div>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-3-2">
+        <h2 class="section-heading">Shipping Method Message</h2>
+        <p>Add custom messages that appear alongside specific shipping methods. Use this to provide additional
+            information, delivery estimates, or promotional messages.</p>
+
+        <h5>How to Add a Shipping Message:</h5>
+        <ol>
+            <li>Go to <strong>Shipping Customizations</strong></li>
+            <li>Click <strong>Create Customizations</strong></li>
+            <li>Select <strong>Add Message to Shipping Method</strong></li>
+            <li>Enter a customization name</li>
+            <li>Select or enter the shipping method name</li>
+            <li>Type your custom message in the "Message" field</li>
+            <li>Choose whether to prefix the shipping method name to the message</li>
+            <li>Add conditions (optional)</li>
+            <li>Click <strong>Save</strong></li>
+        </ol>
+
+        <h5>Message Examples:</h5>
+        <ul>
+            <li><strong>Delivery Time:</strong> "Express Shipping: Arrives within 1-2 business days"</li>
+            <li><strong>Special Instructions:</strong> "Signature required upon delivery"</li>
+            <li><strong>Cost Savings:</strong> "Save 20% with Standard Shipping"</li>
+            <li><strong>Service Details:</strong> "Includes tracking and insurance up to $100"</li>
+        </ul>
+
+        <h5>Prefix Option:</h5>
+        <p>Enable <strong>"Prefix Shipping Method Name to Message"</strong> checkbox to automatically add the shipping
+            method name before your message. For example:</p>
+        <ul>
+            <li>Checked: "Express Shipping: Your message here"</li>
+            <li>Unchecked: "Your message here"</li>
+        </ul>
+
+        <h5>Condition Example:</h5>
+        <div class="table-responsive my-4">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th class="theme-bg-light">Condition Field</th>
+                        <td>Shipping Country</td>
+                    </tr>
+                    <tr>
+                        <th class="theme-bg-light">Operator</th>
+                        <td>is</td>
+                    </tr>
+                    <tr>
+                        <th class="theme-bg-light">Value</th>
+                        <td>AE (United Arab Emirates)</td>
+                    </tr>
+                    <tr>
+                        <th class="theme-bg-light">Result</th>
+                        <td>Message only shows for customers in UAE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-3-3">
+        <h2 class="section-heading">Reorder Shipping Methods</h2>
+        <p>Control the display order of shipping methods at checkout. Place preferred or more profitable shipping
+            options at the top.</p>
+
+        <h5>Configuration Steps:</h5>
+        <ol>
+            <li>Access <strong>Shipping Customizations</strong></li>
+            <li>Click <strong>Create Customizations</strong></li>
+            <li>Select <strong>Reorder Shipping Methods</strong></li>
+            <li>Enter a customization name</li>
+            <li>Set the order number (1 for first position, 2 for second, etc.)</li>
+            <li>Select the shipping method to reorder</li>
+            <li>Add conditions for when this order should apply</li>
+            <li>Click <strong>Save</strong></li>
+        </ol>
+
+        <h5>Strategic Ordering Strategies:</h5>
+        <ul>
+            <li><strong>Revenue Optimization:</strong> Place higher-margin shipping options first</li>
+            <li><strong>Speed Priority:</strong> Show fastest options at the top for urgent orders</li>
+            <li><strong>Cost-Effective:</strong> Highlight free or discounted shipping methods</li>
+            <li><strong>Conditional Ordering:</strong> Change order based on customer location or cart value</li>
+        </ul>
+
+        <h5>Customization Tags:</h5>
+        <p>The summary shows the shipping method name tag: <code>customertag is</code></p>
+    </section><!--//section-->
+</article><!--//docs-article-->
+
+<!-- SECTION 4: ORDER VALIDATIONS -->
+<article class="docs-article" id="section-4">
+    <header class="docs-header">
+        <h1 class="docs-heading">Order Validations</h1>
+        <section class="docs-intro">
+            <p>Order Validations help you block suspicious orders and reduce fraud by setting rules based on address
+                information, cart totals, or customer data. When validation fails, customers see a custom error message
+                and cannot complete checkout.</p>
+        </section><!--//docs-intro-->
+    </header>
+
+    <section class="docs-section" id="item-4-1">
+        <h2 class="section-heading">Overview</h2>
+        <p>Order Validations allow you to create rules that must be met before a customer can complete their purchase.
+            This powerful feature helps protect your business from fraud, ensures minimum order values, and enforces
+            business rules.</p>
+
+        <h5>Key Benefits:</h5>
+        <ul>
+            <li><strong>Fraud Prevention:</strong> Block orders from suspicious addresses or patterns</li>
+            <li><strong>Address Validation:</strong> Prevent delivery to P.O. Boxes or restricted addresses</li>
+            <li><strong>Minimum Orders:</strong> Enforce minimum cart value requirements</li>
+            <li><strong>Custom Rules:</strong> Create business-specific validation logic</li>
+            <li><strong>Clear Messaging:</strong> Display helpful error messages to customers</li>
+        </ul>
+
+        <h5>How It Works:</h5>
+        <ol>
+            <li>Customer proceeds to checkout</li>
+            <li>Validation rules are checked in real-time</li>
+            <li>If validation fails, checkout is blocked</li>
+            <li>Custom error message is displayed</li>
+            <li>Customer can modify their order and retry</li>
+        </ol>
+
+        <h5>Run Locations:</h5>
+        <p>Choose when validation should occur:</p>
+        <ul>
+            <li><strong>Checkout Completion:</strong> Validate when customer clicks "Pay Now"</li>
+            <li><strong>Checkout Interaction:</strong> Validate as customer fills out fields</li>
+        </ul>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-4-2">
+        <h2 class="section-heading">Creating Validations</h2>
+        <p>Create comprehensive order validations with custom error messages and conditions.</p>
+
+        <h5>Step-by-Step Setup:</h5>
+        <ol>
+            <li>Navigate to <strong>Order Validations</strong> from the dashboard</li>
+            <li>Click <strong>Create Validation</strong></li>
+            <li>Enter a customization name (internal reference, not visible to customers)</li>
+            <li>Write your error message that customers will see</li>
+            <li>Click <strong>Show Translation (optional)</strong> to add translated versions</li>
+            <li>Choose the error message location (Top of Checkout is default)</li>
+            <li>Add your validation conditions</li>
+            <li>Select when the validation should run (Completion or Interaction)</li>
+            <li>Click <strong>Save</strong> to activate</li>
+        </ol>
+
+        <h5>Error Message Best Practices:</h5>
+        <ul>
+            <li><strong>Be Clear:</strong> Explain exactly what the issue is</li>
+            <li><strong>Be Helpful:</strong> Tell customers how to fix the problem</li>
+            <li><strong>Be Professional:</strong> Maintain a friendly, professional tone</li>
+            <li><strong>Be Specific:</strong> Provide actionable information</li>
+        </ul>
+
+        <h5>Example Error Messages:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>❌ Bad: "Invalid address"
+
+✅ Good: "Address Invalid: Please use an address without a P.O. Box"
+
+❌ Bad: "Order cannot be completed"
+
+✅ Good: "Minimum Order Required: Your cart total must be at least $50.00 to checkout"</code></pre>
+        </div>
+
+        <div class="callout-block callout-block-info">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-globe"></i>
+                    </span>
+                    Translations
+                </h4>
+                <p>Use the "Show Translation" feature to provide error messages in multiple languages for international
+                    customers.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-4-3">
+        <h2 class="section-heading">Validation Types</h2>
+        <p>Checkout Nexus supports various validation types to cover different business needs.</p>
+
+        <h5>1. Cart Total Validation</h5>
+        <p>Enforce minimum or maximum cart value requirements.</p>
+        <div class="table-responsive my-4">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Operator</th>
+                        <th>Value</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cart Total</td>
+                        <td>is greater than</td>
+                        <td>EUR 0.00</td>
+                        <td>Minimum order of €50</td>
+                    </tr>
+                    <tr>
+                        <td>Cart Total</td>
+                        <td>is less than</td>
+                        <td>EUR 1000.00</td>
+                        <td>Maximum order limit</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>2. Address Validation</h5>
+        <p>Block specific address patterns or require certain address formats.</p>
+        <ul>
+            <li><strong>P.O. Box Blocking:</strong> Prevent delivery to P.O. Boxes</li>
+            <li><strong>Address Format:</strong> Require complete address information</li>
+            <li><strong>Geographic Restrictions:</strong> Block certain regions or zip codes</li>
+        </ul>
+
+        <h5>3. Customer Type Validation</h5>
+        <p>Apply different rules for different customer segments.</p>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Example: Block P.O. Box addresses
+Customization Name: Block P.O Box Address
+Error Message: "Address Invalid: Please use an address without a P.O. Box"
+Error Location: Top of Checkout (Default)
+Condition: Address contains "P.O" or "P.O. Box"</code></pre>
+        </div>
+
+        <h5>Managing Validations:</h5>
+        <p>The Order Validations list view shows:</p>
+        <ul>
+            <li><strong>Name:</strong> Your customization name</li>
+            <li><strong>Status:</strong> Enabled or Disabled (toggle to activate/deactivate)</li>
+            <li><strong>Type:</strong> OrderValidation</li>
+            <li><strong>Actions:</strong> Edit button to modify settings</li>
+        </ul>
+
+        <div class="callout-block callout-block-warning">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-play-circle"></i>
+                    </span>
+                    Tutorial Available
+                </h4>
+                <p>Watch the "How to use Order Validations Customization" video (1:20) at the top of the Order
+                    Validations page for a visual walkthrough.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+</article><!--//docs-article-->
+
+<!-- SECTION 5: UPSELLS -->
+<article class="docs-article" id="section-5">
+    <header class="docs-header">
+        <h1 class="docs-heading">Upsells</h1>
+        <section class="docs-intro">
+            <p>Upsell App Blocks allow you to display product recommendations at checkout to increase average order
+                value. Choose between manually selected products or automatic recommendations powered by Shopify's
+                recommendation engine.</p>
+        </section><!--//docs-intro-->
+    </header>
+
+    <section class="docs-section" id="item-5-1">
+        <h2 class="section-heading">Overview</h2>
+        <p>Checkout upsells are one of the most effective ways to increase revenue. By showing relevant product
+            recommendations at the final stage of purchase, you can significantly boost your average order value.</p>
+
+        <h5>Upsell Performance Metrics:</h5>
+        <p>The Upsells dashboard shows performance data for the last 30 days:</p>
+        <ul>
+            <li><strong>Upsells Added To Cart:</strong> Number of times upsell products were added (0 by default)</li>
+            <li><strong>Upsells Sold:</strong> Number of upsell products actually purchased (0 by default)</li>
+            <li><strong>Total Value Added:</strong> Revenue generated from upsells ($0.00 by default)</li>
+        </ul>
+
+        <h5>Upsell Types:</h5>
+        <div class="table-responsive my-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>How It Works</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Always Displaying Upsells</strong></td>
+                        <td>Upsells show to all customers regardless of cart contents</td>
+                        <td>Bestsellers, seasonal items, universal products</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Manually Selected Products</strong></td>
+                        <td>You choose specific products to display as upsells</td>
+                        <td>Accessories, complementary products, bundles</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Automatic Recommendations</strong></td>
+                        <td>Shopify's AI recommends products based on cart</td>
+                        <td>Large catalogs, personalized recommendations</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="callout-block callout-block-info">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-video"></i>
+                    </span>
+                    Learn More
+                </h4>
+                <p>Watch the "How to use Upsells" tutorial (3:13) for an in-depth guide on setting up and optimizing
+                    your upsells.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-5-2">
+        <h2 class="section-heading">Creating Upsells</h2>
+        <p>Set up upsells with complete control over product selection, display conditions, and targeting.</p>
+
+        <h5>Basic Upsell Setup:</h5>
+        <ol>
+            <li>Navigate to <strong>All Upsells</strong> from the dashboard</li>
+            <li>Click <strong>Create Upsell</strong></li>
+            <li>Enter a name for your upsell (internal reference)</li>
+            <li>Set the upsell status (Active by default)</li>
+            <li>Choose the condition to display the upsell</li>
+            <li>Set the priority number (lower = higher priority, default is 99)</li>
+            <li>Select targeting conditions</li>
+            <li>Choose product selection strategy</li>
+            <li>Add products (if manual selection)</li>
+            <li>Click <strong>Save</strong></li>
+        </ol>
+
+        <h5>Display Conditions:</h5>
+        <ul>
+            <li><strong>Always Displaying Upsells:</strong> Show to everyone</li>
+            <li><strong>No Condition:</strong> Display based on other settings only</li>
+            <li><strong>Custom Conditions:</strong> Show based on cart contents, customer type, etc.</li>
+        </ul>
+
+        <h5>Priority System:</h5>
+        <p>If multiple upsells are eligible, the one with the lowest priority number displays first. Example:</p>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Priority 10: High-margin accessories (shown first)
+Priority 50: Seasonal products (shown second)
+Priority 99: Default upsells (shown last)</code></pre>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-5-3">
+        <h2 class="section-heading">Product Selection</h2>
+        <p>Choose how products are selected for your upsell offers.</p>
+
+        <h5>Manual Product Selection:</h5>
+        <ol>
+            <li>Select <strong>"Manually select products"</strong> in Product Selection Mode</li>
+            <li>Click <strong>"Add Product"</strong> button</li>
+            <li>Search and select products from your catalog</li>
+            <li>Add up to the maximum allowed products</li>
+            <li>Optionally add a discount code for each product</li>
+        </ol>
+
+        <h5>Discount Codes for Upsells:</h5>
+        <div class="callout-block callout-block-success">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-tag"></i>
+                    </span>
+                    Tip: Incentivize Upsells
+                </h4>
+                <p>You can optionally add a discount code for each product. When customers add these products to their
+                    cart through the upsell, the specified discount code will be automatically applied. This is a great
+                    way to incentivize upsell purchases!</p>
+            </div>
+        </div>
+
+        <h5>Automatic Product Recommendations:</h5>
+        <ol>
+            <li>Select <strong>"Use automatic product recommendations from Shopify's Search & Discovery"</strong></li>
+            <li>Shopify's Recommendation Engine analyzes the cart</li>
+            <li>Relevant products are automatically suggested</li>
+            <li>Products similar to cart items or frequently bought together are shown</li>
+        </ol>
+
+        <div class="alert alert-info" role="alert">
+            <strong>Recommendation Engine:</strong> Using Shopify's Recommendation Engine, we will automatically
+            recommend products based on the products in the cart. Similar to the recommended products on the product
+            page.
+        </div>
+
+        <h5>Product Display:</h5>
+        <p>When no products are selected yet, you'll see:</p>
+        <ul>
+            <li>"No products selected yet"</li>
+            <li>"Click 'Add Product' to start selecting products for your upsell"</li>
+        </ul>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-5-4">
+        <h2 class="section-heading">Conditions & Targeting</h2>
+        <p>Fine-tune when and to whom your upsells appear.</p>
+
+        <h5>Customer Eligibility:</h5>
+        <p>Control which customers see your upsells:</p>
+        <ul>
+            <li><strong>All Customers:</strong> Show to everyone (default)</li>
+            <li><strong>B2B:</strong> Only show to business customers</li>
+            <li><strong>Non-B2B:</strong> Only show to retail customers</li>
+        </ul>
+
+        <h5>Product Selection Strategy:</h5>
+        <div class="table-responsive my-4">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Strategy</th>
+                        <th>When to Use</th>
+                        <th>Benefits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Manually Selected Products</td>
+                        <td>You know exactly what to recommend</td>
+                        <td>Full control, strategic pairing, promotional items</td>
+                    </tr>
+                    <tr>
+                        <td>Automatic Recommendations</td>
+                        <td>Large catalog, personalization needed</td>
+                        <td>AI-powered, dynamic, always relevant</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Country Filter:</h5>
+        <p>Enable country filtering to limit upsells to specific countries:</p>
+        <ul>
+            <li>Check <strong>"Enable Country Filter"</strong></li>
+            <li>Select countries where the upsell should appear</li>
+            <li>Leave unchecked to show worldwide</li>
+        </ul>
+
+        <h5>Best Practices:</h5>
+        <ul>
+            <li><strong>Relevance is Key:</strong> Only show products that complement the cart</li>
+            <li><strong>Don't Overwhelm:</strong> Limit to 3-5 upsell products max</li>
+            <li><strong>Test Pricing:</strong> Try different price points for upsells</li>
+            <li><strong>Use Discounts Wisely:</strong> Incentivize without eroding margin</li>
+            <li><strong>Monitor Performance:</strong> Check the analytics dashboard regularly</li>
+        </ul>
+    </section><!--//section-->
+</article><!--//docs-article-->
+
+<!-- SECTION 6: AUTO ADD GIFT/PRODUCT -->
+<article class="docs-article" id="section-6">
+    <header class="docs-header">
+        <h1 class="docs-heading">Auto Add Gift/Product to Cart</h1>
+        <section class="docs-intro">
+            <p>Automatically add products to the cart at checkout based on conditions. Perfect for offering free gifts,
+                samples, or required products when specific criteria are met.</p>
+        </section><!--//docs-intro-->
+    </header>
+
+    <section class="docs-section" id="item-6-1">
+        <h2 class="section-heading">Overview</h2>
+        <p>The Auto Add Gift/Product feature allows you to automatically include products in the customer's cart when
+            they reach checkout, based on conditions you define. This is perfect for promotional campaigns, free gift
+            offers, or adding required accessories.</p>
+
+        <h5>Key Features:</h5>
+        <ul>
+            <li><strong>Conditional Auto-Add:</strong> Add products based on cart value, customer type, or products</li>
+            <li><strong>Always Add Products:</strong> Add products to every order</li>
+            <li><strong>Make Required:</strong> Prevent customers from removing the product</li>
+            <li><strong>Optional Offers:</strong> Allow customers to remove if they want</li>
+            <li><strong>Automatic Removal:</strong> Remove product if condition is no longer met</li>
+        </ul>
+
+        <div class="callout-block callout-block-warning">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </span>
+                    Important Setup Note
+                </h4>
+                <p>After selecting the product you want to auto-add, make sure to finish setting up your customization
+                    by adding our Auto Add Gift/Product extension in the checkout editor. Please contact us if you need
+                    assistance.</p>
+            </div>
+        </div>
+
+        <div class="alert alert-info" role="alert">
+            <strong>Note:</strong> Products that are not free will not be automatically added to the cart but instead
+            will prompt the customer to add the product to their cart. See <a href="#" class="alert-link">this Shopify
+                requirement</a> for apps for more details.
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-6-2">
+        <h2 class="section-heading">Configuration</h2>
+        <p>Set up auto-add products with precise control over when and how they're added.</p>
+
+        <h5>Step-by-Step Configuration:</h5>
+        <ol>
+            <li>Navigate to <strong>All Auto Gift/Product to Cart Customizations</strong></li>
+            <li>Click <strong>Create gift</strong></li>
+            <li>Enter a customization name (Example: "Add free sample of our best product")</li>
+            <li>Select the condition to add the product to cart</li>
+            <li>Choose the products to add (up to 3 products)</li>
+            <li>Configure optional settings</li>
+            <li>Set customer eligibility</li>
+            <li>Click <strong>Save</strong></li>
+        </ol>
+
+        <h5>Condition Options:</h5>
+        <div class="table-responsive my-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Condition Type</th>
+                        <th>When to Use</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Always Add Product</strong></td>
+                        <td>Add to every order regardless of conditions</td>
+                        <td>Free sample with every purchase</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Conditional Add</strong></td>
+                        <td>Add only when specific criteria are met</td>
+                        <td>Free gift when cart value > $100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Product Selection:</h5>
+        <ol>
+            <li>Click <strong>"Select Product"</strong> button</li>
+            <li>Search for and choose products (Product 1, Product 2, Product 3)</li>
+            <li>Multiple products will all be added if conditions are met</li>
+            <li>These products will be added to cart if they are not already in the cart</li>
+        </ol>
+
+        <h5>Optional Settings:</h5>
+        <div class="callout-block callout-block-info">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-cog"></i>
+                    </span>
+                    Make Product Required
+                </h4>
+                <p>Enable this option to prevent the checkout from being completed if the product is not in the cart.
+                    Example: Block checkout if product A is required when purchasing product B.</p>
+            </div>
+        </div>
+
+        <div class="callout-block callout-block-success">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-gift"></i>
+                    </span>
+                    Show as Optional Offer
+                </h4>
+                <p>When customer removes a product that was auto-added, show it as an optional offer instead of
+                    re-adding it. This allows the customer to add the product if they want instead of re-adding.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-6-3">
+        <h2 class="section-heading">Conditions</h2>
+        <p>Create sophisticated conditions to control when products are automatically added.</p>
+
+        <h5>Customer Eligibility:</h5>
+        <p>Control which customer types receive auto-added products:</p>
+        <ul>
+            <li><strong>All Customers:</strong> Everyone gets the product (default)</li>
+            <li><strong>B2B:</strong> Only business customers</li>
+            <li><strong>Non-B2B:</strong> Only retail customers</li>
+        </ul>
+
+        <h5>Example Conditions:</h5>
+
+        <h6>1. Cart Value Based</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Condition: Cart Total is greater than $100.00
+Action: Add free sample product
+Customer: All Customers
+Make Required: No
+Show as Optional: Yes</code></pre>
+        </div>
+
+        <h6>2. Product-Based</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Condition: Product "Laptop" is in cart
+Action: Add "Laptop Case" automatically
+Customer: All Customers
+Make Required: Yes (force accessory purchase)
+Show as Optional: No</code></pre>
+        </div>
+
+        <h6>3. Customer Type Based</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Condition: Always Add Product
+Action: Add wholesale catalog
+Customer: B2B Only
+Make Required: No
+Show as Optional: Yes</code></pre>
+        </div>
+
+        <h5>Managing Auto-Add Customizations:</h5>
+        <p>The list view displays:</p>
+        <ul>
+            <li><strong>Name:</strong> Your customization name</li>
+            <li><strong>conditionType:</strong> "Always Displaying Gifts" or condition details</li>
+            <li><strong>Status:</strong> Active or inactive (shown with green badge)</li>
+            <li><strong>Actions:</strong> Edit and Delete buttons</li>
+        </ul>
+
+        <div class="callout-block callout-block-warning">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-video"></i>
+                    </span>
+                    Tutorial Available
+                </h4>
+                <p>Watch the "How To Auto Add Product" video (3:13) for a complete walkthrough of setting up auto-add
+                    products.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+</article><!--//docs-article-->
+
+<!-- SECTION 7: SURVEYS & FORMS -->
+<article class="docs-article" id="section-7">
+    <header class="docs-header">
+        <h1 class="docs-heading">Surveys & Forms</h1>
+        <section class="docs-intro">
+            <p>Collect valuable customer information at checkout with customizable surveys and forms. Add text inputs,
+                radio buttons, checkboxes, and more to gather data that helps improve your business.</p>
+        </section><!--//docs-intro-->
+    </header>
+
+    <section class="docs-section" id="item-7-1">
+        <h2 class="section-heading">Creating Surveys</h2>
+        <p>Build custom surveys with multiple form elements to collect exactly the information you need from customers
+            during checkout.</p>
+
+        <h5>Survey Builder Workflow:</h5>
+        <ol>
+            <li>Navigate to <strong>All Surveys</strong> from the dashboard</li>
+            <li>Click <strong>Create Survey</strong></li>
+            <li>Complete <strong>Step 1: Survey Title</strong></li>
+            <li>Add form elements in <strong>Step 2: Add Form Elements</strong></li>
+            <li>Configure elements in <strong>Step 3: Configure Form Elements</strong></li>
+            <li>Set advanced conditions in <strong>Step 4: Advanced Conditions</strong></li>
+            <li>Use the <strong>Preview</strong> panel to see your survey</li>
+            <li>Click <strong>Save</strong> when complete</li>
+        </ol>
+
+        <h5>Step 1: Survey Title</h5>
+        <p>Provide a title for your survey. Important notes:</p>
+        <ul>
+            <li>This title will <strong>NOT be shown to customers</strong></li>
+            <li>It's for internal reference only</li>
+            <li>Example: "Untitled Survey", "Customer Preferences Survey", "Gift Message Form"</li>
+        </ul>
+
+        <h5>Step 2: Add Form Elements</h5>
+        <p>Choose the type of input field you want to add:</p>
+        <div class="table-responsive my-4">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Element Type</th>
+                        <th>Description</th>
+                        <th>Best Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Text Input</strong></td>
+                        <td>Single-line text field</td>
+                        <td>Names, order notes, short messages</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Text Area</strong></td>
+                        <td>Multi-line text field</td>
+                        <td>Long messages, special instructions, gift messages</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Radio Buttons</strong></td>
+                        <td>Select one option from multiple choices</td>
+                        <td>Shipping preferences, gift wrap options</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Checkboxes</strong></td>
+                        <td>Select multiple options</td>
+                        <td>Product features, additional services</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dropdown</strong></td>
+                        <td>Select from dropdown list</td>
+                        <td>Countries, occasions, preferences</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Click <strong>Add Form Element</strong> to add multiple elements to your survey. You can add as many elements
+            as needed.</p>
+
+        <div class="callout-block callout-block-success">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                    Live Preview
+                </h4>
+                <p>Use the Preview panel on the right to see how your survey will appear to customers in real-time as
+                    you build it.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-7-2">
+        <h2 class="section-heading">Form Elements</h2>
+        <p>Configure each form element with labels, placeholders, and validation rules.</p>
+
+        <h5>Step 3: Configure Form Elements</h5>
+        <p>After adding elements, configure each one individually. Drag and drop to reorder them as needed.</p>
+
+        <h6>Element Configuration Options:</h6>
+        <ul>
+            <li><strong>Field Label:</strong> The label shown above the input field</li>
+            <li><strong>Placeholder Text:</strong> Hint text shown inside the field</li>
+            <li><strong>Required Field:</strong> Toggle to make the field mandatory</li>
+            <li><strong>Field Options:</strong> For dropdowns, radio buttons, and checkboxes</li>
+            <li><strong>Validation Rules:</strong> Email format, min/max length, etc.</li>
+        </ul>
+
+        <h5>Text Input Configuration:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Field Type: Text Input
+Label: "Gift Recipient Name"
+Placeholder: "Enter recipient's name"
+Required: Yes
+Validation: Min 2 characters</code></pre>
+        </div>
+
+        <h5>Dropdown Configuration:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Field Type: Dropdown
+Label: "How did you hear about us?"
+Options:
+  - Social Media
+  - Google Search
+  - Friend Referral
+  - Advertisement
+  - Other
+Required: No</code></pre>
+        </div>
+
+        <h5>Checkbox Configuration:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Field Type: Checkbox
+Label: "Additional Services"
+Options:
+  - Gift Wrapping (+$5)
+  - Express Processing (+$10)
+  - Include Gift Receipt
+  - Send Birthday Card
+Required: No</code></pre>
+        </div>
+
+        <div class="callout-block callout-block-info">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-arrows-alt"></i>
+                    </span>
+                    Reordering Elements
+                </h4>
+                <p>You can also add conditions to each element to control when it is shown. You can also add conditions
+                    to each element to reorder them. Drag and drop form elements to change their order.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-7-3">
+        <h2 class="section-heading">Customer Targeting</h2>
+        <p>Control which customers see your surveys using advanced conditions and customer eligibility settings.</p>
+
+        <h5>Step 4: Advanced Conditions</h5>
+        <p>Add advanced conditions to control when the survey is shown to customers.</p>
+
+        <h6>Customer Eligibility Options:</h6>
+        <ul>
+            <li><strong>All Customers:</strong> Show survey to everyone (default)</li>
+            <li><strong>B2B:</strong> Only show to business customers</li>
+            <li><strong>Non-B2B:</strong> Only show to retail customers</li>
+        </ul>
+
+        <h6>Additional Conditions:</h6>
+        <p>Add conditions based on:</p>
+        <ul>
+            <li><strong>Cart Value:</strong> Show survey only for orders above/below certain amounts</li>
+            <li><strong>Product in Cart:</strong> Display survey when specific products are purchased</li>
+            <li><strong>Customer Tags:</strong> Target customers with specific tags</li>
+            <li><strong>Order Count:</strong> First-time vs returning customers</li>
+        </ul>
+
+        <h5>Example Targeting Scenarios:</h5>
+
+        <h6>Scenario 1: High-Value Order Feedback</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Survey: "Premium Customer Satisfaction"
+Show to: All Customers
+Condition: Cart Total > $200
+Elements:
+  - How would you rate your experience? (Radio)
+  - Would you recommend us? (Yes/No Radio)
+  - Additional comments (Text Area)</code></pre>
+        </div>
+
+        <h6>Scenario 2: Gift Message for Specific Products</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Survey: "Gift Message"
+Show to: All Customers
+Condition: Product "Gift Set" is in cart
+Elements:
+  - Recipient Name (Text Input, Required)
+  - Gift Message (Text Area, Required)
+  - Include gift receipt? (Checkbox)</code></pre>
+        </div>
+
+        <h6>Scenario 3: B2B Purchase Information</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>Survey: "Business Information"
+Show to: B2B Customers only
+Condition: Always show
+Elements:
+  - Company Name (Text Input, Required)
+  - Purchase Order Number (Text Input)
+  - Department (Dropdown)
+  - Special Delivery Instructions (Text Area)</code></pre>
+        </div>
+
+        <h5>Survey Management:</h5>
+        <p>The All Surveys list view shows:</p>
+        <ul>
+            <li><strong>Title:</strong> Your survey name</li>
+            <li><strong>Fields:</strong> Number of form elements (e.g., "1")</li>
+            <li><strong>Action:</strong> Edit and Delete buttons</li>
+        </ul>
+
+        <div class="callout-block callout-block-warning">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-video"></i>
+                    </span>
+                    Tutorial Available
+                </h4>
+                <p>Watch the "How to Add survey & form" video (3:13) for a complete guide on creating effective checkout
+                    surveys.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+</article><!--//docs-article-->
+
+<!-- SECTION 8: EXTENSIONS -->
+<article class="docs-article" id="section-8">
+    <header class="docs-header">
+        <h1 class="docs-heading">Extensions</h1>
+        <section class="docs-intro">
+            <p>Checkout Nexus provides a variety of pre-built extensions that you can add to your checkout to enhance
+                functionality and improve the customer experience.</p>
+        </section><!--//docs-intro-->
+    </header>
+
+    <section class="docs-section" id="item-8-1">
+        <h2 class="section-heading">Available Extensions</h2>
+        <p>Checkout Nexus offers the following checkout extensions that you can easily add to your store:</p>
+
+        <h5>Standard Extensions:</h5>
+        <div class="table-responsive my-4">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Extension</th>
+                        <th>Description</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Checkbox</strong></td>
+                        <td>Add custom checkboxes for agreements or options</td>
+                        <td>Terms acceptance, newsletter signup, gift wrap</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Custom Banner</strong></td>
+                        <td>Display promotional banners or important messages</td>
+                        <td>Free shipping offers, holiday messages, promotions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Custom Button</strong></td>
+                        <td>Add clickable buttons with custom actions</td>
+                        <td>Apply discount codes, special requests</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contact Info</strong></td>
+                        <td>Display contact information</td>
+                        <td>Support phone numbers, email, chat links</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Social Media Links</strong></td>
+                        <td>Add links to your social media profiles</td>
+                        <td>Build social presence, increase followers</td>
+                    </tr>
+                    <tr>
+                        <td><strong>List</strong></td>
+                        <td>Display bullet point lists</td>
+                        <td>Shipping info, guarantees, features</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Age Validator</strong></td>
+                        <td>Verify customer age before purchase</td>
+                        <td>Alcohol, tobacco, age-restricted products</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Upsell / Recommended products</strong></td>
+                        <td>Show product recommendations</td>
+                        <td>Increase AOV, cross-sell, upsell</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Payment Icons</strong></td>
+                        <td>Display accepted payment method icons</td>
+                        <td>Build trust, show payment options</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Free Shipping</strong></td>
+                        <td>Display free shipping progress bar</td>
+                        <td>Encourage higher cart values</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Custom Input</strong></td>
+                        <td>Add custom text input fields</td>
+                        <td>Order notes, special instructions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trust Badge</strong></td>
+                        <td>Show security and trust badges</td>
+                        <td>SSL certificates, guarantees, secure checkout</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="callout-block callout-block-info">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-plus-circle"></i>
+                    </span>
+                    Load More Extensions
+                </h4>
+                <p>Click the <strong>"Load More"</strong> button at the bottom of the Extensions list to see additional
+                    available extensions.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-8-2">
+        <h2 class="section-heading">Using Extensions</h2>
+        <p>Extensions are added through the Shopify Checkout Editor. Here's how to implement them:</p>
+
+        <h5>Adding an Extension:</h5>
+        <ol>
+            <li>From the Checkout Nexus dashboard, browse the Extensions section</li>
+            <li>Choose the extension you want to add</li>
+            <li>Click on the extension to view details</li>
+            <li>Follow the specific setup instructions for that extension</li>
+            <li>Configure extension settings as needed</li>
+            <li>Position the extension in your checkout flow</li>
+            <li>Save and publish your changes</li>
+        </ol>
+
+        <h5>Extension Placement:</h5>
+        <p>Most extensions can be placed in these checkout areas:</p>
+        <ul>
+            <li><strong>Above Contact Information</strong></li>
+            <li><strong>Above Shipping Address</strong></li>
+            <li><strong>Above Shipping Methods</strong></li>
+            <li><strong>Above Payment Methods</strong></li>
+            <li><strong>Above Order Summary</strong></li>
+            <li><strong>Thank You Page</strong></li>
+            <li><strong>Order Status Page</strong></li>
+        </ul>
+
+        <h5>Popular Extension Combinations:</h5>
+
+        <h6>Trust-Building Setup:</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>1. Trust Badge (above payment methods)
+2. Payment Icons (above payment methods)
+3. Contact Info (in order summary)
+4. Social Media Links (thank you page)</code></pre>
+        </div>
+
+        <h6>Revenue Optimization Setup:</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>1. Free Shipping Progress Bar (above order summary)
+2. Upsell Products (above payment methods)
+3. Custom Button for promo codes (above contact info)
+4. Custom Banner for limited time offers (top of checkout)</code></pre>
+        </div>
+
+        <h6>Compliance & Verification Setup:</h6>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code>1. Age Validator (above contact information)
+2. Terms & Conditions Checkbox (above payment methods)
+3. Custom Banner with legal info (top of checkout)
+4. List of return policy points (order summary)</code></pre>
+        </div>
+
+        <h5>Extension Best Practices:</h5>
+        <ul>
+            <li><strong>Don't Overcrowd:</strong> Use 3-5 extensions maximum to avoid cluttering checkout</li>
+            <li><strong>Strategic Placement:</strong> Place extensions where they make the most sense</li>
+            <li><strong>Mobile-First:</strong> Test all extensions on mobile devices</li>
+            <li><strong>Clear Purpose:</strong> Each extension should have a clear benefit for customers</li>
+            <li><strong>Brand Consistent:</strong> Ensure extensions match your brand style</li>
+            <li><strong>Performance:</strong> Monitor checkout speed with extensions enabled</li>
+        </ul>
+
+        <div class="callout-block callout-block-success">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-graduation-cap"></i>
+                    </span>
+                    Learn More
+                </h4>
+                <p>Each extension has its own tutorial video and documentation. Click on any extension to access
+                    detailed setup guides and best practices.</p>
+            </div>
+        </div>
+    </section><!--//section-->
+</article><!--//docs-article-->
+
+<!-- SECTION 9: FAQs -->
+<article class="docs-article" id="section-9">
+    <header class="docs-header">
+        <h1 class="docs-heading">FAQs</h1>
+        <section class="docs-intro">
+            <p>Find answers to commonly asked questions about Checkout Nexus. If you can't find what you're looking for,
+                please contact our support team.</p>
+        </section><!--//docs-intro-->
+    </header>
+
+    <section class="docs-section" id="item-9-1">
+        <h2 class="section-heading">General Questions</h2>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What is Checkout Nexus?</h5>
+        <p>Checkout Nexus is a comprehensive Shopify app that allows you to customize and enhance your checkout
+            experience. It provides tools for payment customization, shipping control, order validation, upsells,
+            auto-add products, surveys, and checkout extensions.</p>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Do I need Shopify Plus to use Checkout Nexus?</h5>
+        <p>While Checkout Nexus works on all Shopify plans, certain features like Payment Customizations, Shipping
+            Customizations, and Order Validations require checkout extensions which are only available to Shopify Plus
+            stores. Check the Subscription Plans section for full details.</p>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How much does Checkout Nexus cost?</h5>
+        <p>Checkout Nexus offers two pricing tiers:</p>
+        <ul>
+            <li><strong>Free Plan:</strong> Includes basic checkout extensions, surveys, and limited upsell features
+            </li>
+            <li><strong>Monthly Advanced Plan:</strong> Full access to all features including payment customizations,
+                shipping customizations, and order validations. An active subscription is required.</li>
+        </ul>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I try Checkout Nexus before upgrading?</h5>
+        <p>Yes! Install the app and use the free tier to test basic features. You can upgrade to the Monthly Advanced
+            Plan when you're ready to access premium features.</p>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Will Checkout Nexus slow down my checkout?</h5>
+        <p>Checkout Nexus is built with performance in mind and uses Shopify's native checkout extension framework. The
+            impact on checkout speed is minimal. However, we recommend testing your checkout performance after adding
+            customizations, especially if using many extensions simultaneously.</p>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I use Checkout Nexus with other checkout apps?
+        </h5>
+        <p>Yes, Checkout Nexus is designed to work alongside other Shopify apps. However, if multiple apps modify the
+            same checkout elements (like payment methods), conflicts may occur. Test thoroughly when using multiple
+            checkout customization apps.</p>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-9-2">
+        <h2 class="section-heading">Technical Support</h2>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How do I contact support?</h5>
+        <p>You can contact support through several channels:</p>
+        <ul>
+            <li>Click the support chat button (with notification badge) at the bottom right of any page</li>
+            <li>Click "Contact Us" link at the bottom of any Checkout Nexus page</li>
+            <li>Email our support team directly</li>
+            <li>Submit a feature request through the "Don't see what you are looking for?" option in customization menus
+            </li>
+        </ul>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How long does it take for customizations to go live?
+        </h5>
+        <p>Most customizations take effect immediately after saving. However, you may need to:</p>
+        <ul>
+            <li>Refresh your checkout page to see changes</li>
+            <li>Clear your browser cache if changes don't appear</li>
+            <li>For checkout extensions, ensure they're enabled in your Shopify Checkout Editor</li>
+        </ul>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can you help me set up my customizations?</h5>
+        <p>Absolutely! Our support team is here to help. Contact us through the chat button and describe what you want
+            to achieve. We can provide:</p>
+        <ul>
+            <li>Step-by-step guidance for your specific use case</li>
+            <li>Best practice recommendations</li>
+            <li>Troubleshooting assistance</li>
+            <li>Custom condition logic help</li>
+        </ul>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Are there video tutorials available?</h5>
+        <p>Yes! Each major feature section includes tutorial videos:</p>
+        <ul>
+            <li><strong>Order Validations:</strong> 1:20 minute tutorial</li>
+            <li><strong>Shipping Customizations:</strong> 1:20 minute tutorial</li>
+            <li><strong>Payment Customizations:</strong> 1:20 minute tutorial</li>
+            <li><strong>Upsells:</strong> 3:13 minute tutorial</li>
+            <li><strong>Auto Add Products:</strong> 3:13 minute tutorial</li>
+            <li><strong>Surveys & Forms:</strong> 3:13 minute tutorial</li>
+        </ul>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What data does Checkout Nexus collect?</h5>
+        <p>Checkout Nexus collects only the data necessary to provide its functionality:</p>
+        <ul>
+            <li>Order information (for validations and upsell analytics)</li>
+            <li>Customer information (for conditional targeting)</li>
+            <li>Cart data (for conditions and auto-add logic)</li>
+            <li>Survey responses (when using survey features)</li>
+            <li>Usage analytics (for performance tracking)</li>
+        </ul>
+        <p>All data is handled according to Shopify's privacy standards and GDPR requirements.</p>
+    </section><!--//section-->
+
+    <section class="docs-section" id="item-9-3">
+        <h2 class="section-heading">Troubleshooting</h2>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>My customization isn't showing at checkout. What
+            should I do?</h5>
+        <p>Follow these troubleshooting steps:</p>
+        <ol>
+            <li><strong>Check Status:</strong> Ensure the customization is set to "Active" or "Enabled"</li>
+            <li><strong>Verify Conditions:</strong> Make sure your test order meets all conditions</li>
+            <li><strong>Check Plan:</strong> Confirm your subscription plan supports the feature</li>
+            <li><strong>Clear Cache:</strong> Clear your browser cache and cookies</li>
+            <li><strong>Test Incognito:</strong> Try viewing checkout in an incognito/private window</li>
+            <li><strong>Review Extensions:</strong> For extensions, ensure they're enabled in Shopify Checkout Editor
+            </li>
+        </ol>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>My payment method isn't hiding. Why?</h5>
+        <p>Common causes include:</p>
+        <ul>
+            <li><strong>Condition Not Met:</strong> The cart doesn't meet your hiding conditions</li>
+            <li><strong>Incorrect Payment Method Name:</strong> The method name doesn't match exactly</li>
+            <li><strong>Plan Required:</strong> You need the Monthly Advanced Plan for this feature</li>
+            <li><strong>Multiple Rules:</strong> Another customization may be overriding your rule</li>
+        </ul>
+        <p><strong>Solution:</strong> Double-check your customization name tag summary to ensure conditions are correct.
+        </p>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Auto-add products aren't being added to cart. What's
+            wrong?</h5>
+        <p>Check these common issues:</p>
+        <ul>
+            <li><strong>Paid Products:</strong> Products that aren't free will prompt the customer to add manually
+                (Shopify requirement)</li>
+            <li><strong>Extension Not Added:</strong> You must add the Auto Add extension in the Checkout Editor</li>
+            <li><strong>Conditions:</strong> Verify your conditions are being met</li>
+            <li><strong>Product Selection:</strong> Ensure you've clicked "Select Product" and chosen products</li>
+            <li><strong>Customer Eligibility:</strong> Check if the customer type matches your targeting</li>
+        </ul>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Upsells aren't displaying. How do I fix this?</h5>
+        <p>Verify the following:</p>
+        <ul>
+            <li><strong>Products Selected:</strong> Ensure you've selected products (manual mode) or enabled automatic
+                recommendations</li>
+            <li><strong>Priority:</strong> Check if another upsell with lower priority is showing instead</li>
+            <li><strong>Conditions:</strong> Confirm the display conditions are met</li>
+            <li><strong>Customer Type:</strong> Verify customer eligibility settings</li>
+            <li><strong>Country Filter:</strong> If enabled, ensure the customer's country is included</li>
+        </ul>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>I'm getting an error message. What does it mean?
+        </h5>
+        <div class="callout-block callout-block-danger">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                    Common Error Messages
+                </h4>
+                <ul class="mb-0">
+                    <li><strong>"Upgrade required":</strong> This feature needs the Monthly Advanced Plan</li>
+                    <li><strong>"Active subscription needed":</strong> Payment, Shipping, and Order Validation
+                        customizations require an active subscription</li>
+                    <li><strong>"Products that are not free will not be automatically added":</strong> This is a Shopify
+                        requirement for auto-add products</li>
+                    <li><strong>"Checkout extensions not supported":</strong> Your Shopify plan doesn't support checkout
+                        extensions</li>
+                </ul>
+            </div>
+        </div>
+
+        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How do I reset or start over with my customizations?
+        </h5>
+        <p>To remove or reset customizations:</p>
+        <ol>
+            <li>Navigate to the relevant customization list (Payment, Shipping, Order Validations, etc.)</li>
+            <li>Click the <strong>Edit</strong> button next to the customization</li>
+            <li>You can either:
+                <ul>
+                    <li>Modify the settings and save</li>
+                    <li>Toggle the status to "Disabled" to deactivate without deleting</li>
+                    <li>Click <strong>Delete</strong> to permanently remove</li>
+                </ul>
+            </li>
+            <li>For extensions, disable them in the Shopify Checkout Editor</li>
+        </ol>
+
+        <div class="callout-block callout-block-success">
+            <div class="content">
+                <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                        <i class="fas fa-life-ring"></i>
+                    </span>
+                    Still Need Help?
+                </h4>
+                <p>Can't find the answer you're looking for? Have a question or feature request for Checkout Pro Plus?
+                    <strong>Contact Us</strong> using the chat button at the bottom right of the page. Our support team
+                    typically responds within 24 hours.
+                </p>
+            </div>
+        </div>
+    </section><!--//section-->
+</article><!--//docs-article-->

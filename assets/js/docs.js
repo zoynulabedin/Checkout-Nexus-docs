@@ -113,8 +113,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Handle real-time search as user types
 	searchInputs.forEach(input => {
 		input.addEventListener('input', function() {
-			if (this.value.trim().length > 0) {
-				performSearch(this.value.trim());
+			const query = this.value.trim();
+			if (query.length > 0) {
+				performSearch(query);
 			} else {
 				clearSearch();
 			}
@@ -123,62 +124,97 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function performSearch(query) {
-	const searchTerm = query.toLowerCase();
+	const searchTermLower = query.toLowerCase();
 	const sections = document.querySelectorAll('.docs-section');
-	const articles = document.querySelectorAll('.docs-article');
+	const tableRows = document.querySelectorAll('table tbody tr');
+	const sidebarLinks = document.querySelectorAll('#docs-nav .nav-link');
 	let matchFound = false;
+	let firstMatchElement = null;
+	
+	// Search through sidebar navigation - highlight ALL that contain the search term
+	sidebarLinks.forEach(link => {
+		const linkText = link.textContent.toLowerCase().trim();
+		
+		// Partial match - if link contains search term
+		if (linkText.includes(searchTermLower) && searchTermLower.length > 0) {
+			link.style.backgroundColor = '#e3f2fd';
+			link.style.fontWeight = 'bold';
+			link.style.padding = '8px 12px';
+			link.style.borderRadius = '4px';
+			matchFound = true;
+			
+			// Store first match for auto-click
+			if (!firstMatchElement) {
+				firstMatchElement = link;
+			}
+		} else {
+			// Remove highlight from non-matching items
+			link.style.backgroundColor = '';
+			link.style.fontWeight = '';
+			link.style.padding = '';
+			link.style.borderRadius = '';
+		}
+	});
 	
 	// Search through sections
 	sections.forEach(section => {
-		const text = section.textContent.toLowerCase();
-		const heading = section.querySelector('.section-heading');
+		const sectionText = section.textContent.toLowerCase();
 		
-		if (text.includes(searchTerm)) {
+		if (sectionText.includes(searchTermLower)) {
 			section.style.display = 'block';
-			// Highlight the heading if it contains the search term
-			if (heading && heading.textContent.toLowerCase().includes(searchTerm)) {
+			matchFound = true;
+			
+			// Highlight matching section headers
+			const heading = section.querySelector('h3, h4');
+			if (heading && heading.textContent.toLowerCase().includes(searchTermLower)) {
 				heading.style.backgroundColor = '#fff3cd';
 				heading.style.padding = '10px';
 				heading.style.borderRadius = '4px';
 			}
-			matchFound = true;
 		} else {
 			section.style.display = 'none';
 		}
 	});
 	
-	// Search through articles
-	articles.forEach(article => {
-		const sections = article.querySelectorAll('.docs-section');
-		let articleHasMatch = false;
+	// Search through table rows (extensions)
+	tableRows.forEach(row => {
+		const rowTextLower = row.textContent.toLowerCase();
 		
-		sections.forEach(section => {
-			if (section.style.display !== 'none') {
-				articleHasMatch = true;
-			}
-		});
-		
-		if (!articleHasMatch) {
-			article.style.display = 'none';
+		if (rowTextLower.includes(searchTermLower)) {
+			row.style.display = 'table-row';
+			matchFound = true;
 		} else {
-			article.style.display = 'block';
+			row.style.display = 'none';
 		}
 	});
 	
-	// If no matches found, show a message
-	if (!matchFound) {
-		console.log('No results found for: ' + query);
+	// Auto-click and scroll to first matching sidebar item if found
+	if (firstMatchElement && firstMatchElement.classList.contains('scrollto')) {
+		firstMatchElement.click();
+		// Also scroll the sidebar to show the selected item
+		firstMatchElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 	}
+	
+	console.log('Search term: ' + query + ' | Matches found: ' + (matchFound ? 'Yes' : 'No'));
 }
 
 function clearSearch() {
 	const sections = document.querySelectorAll('.docs-section');
-	const articles = document.querySelectorAll('.docs-article');
+	const tableRows = document.querySelectorAll('table tbody tr');
+	const sidebarLinks = document.querySelectorAll('#docs-nav .nav-link');
+	
+	// Clear sidebar highlights
+	sidebarLinks.forEach(link => {
+		link.style.backgroundColor = '';
+		link.style.fontWeight = '';
+		link.style.padding = '';
+		link.style.borderRadius = '';
+	});
 	
 	// Show all sections
 	sections.forEach(section => {
 		section.style.display = 'block';
-		const heading = section.querySelector('.section-heading');
+		const heading = section.querySelector('h3, h4');
 		if (heading) {
 			heading.style.backgroundColor = '';
 			heading.style.padding = '';
@@ -186,9 +222,9 @@ function clearSearch() {
 		}
 	});
 	
-	// Show all articles
-	articles.forEach(article => {
-		article.style.display = 'block';
+	// Show all table rows
+	tableRows.forEach(row => {
+		row.style.display = 'table-row';
 	});
 }
 

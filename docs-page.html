@@ -3287,12 +3287,17 @@ Elements:
 
 	<!-- Extension Image Modal Script -->
 	<script>
-		function showExtensionImage(imageUrl, imageTitle) {
+		function showExtensionImage(imageUrl, imageTitle, dimensions) {
 			// Set the image source
 			document.getElementById('extensionImage').src = imageUrl;
 			
 			// Set the modal title
 			document.getElementById('extensionModalLabel').textContent = imageTitle;
+			
+			// Optional: Display dimensions if provided
+			if (dimensions) {
+				console.log('Image dimensions: ' + dimensions);
+			}
 		}
 	</script>
 

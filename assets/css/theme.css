@@ -12069,15 +12069,37 @@ a.text-link:hover {
   cursor: pointer;
   display: flex;
   align-items: flex-start;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
 .search-result-item:hover {
   background: #f8f9fa;
+  text-decoration: none;
+  color: inherit;
+  transform: translateX(2px);
+}
+
+.search-result-item.selected {
+  background: #e3f2fd;
+  border-left: 3px solid #28b76b;
 }
 
 .search-result-item:last-child {
   border-bottom: none;
+}
+
+.search-result-link {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-result-link:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .result-icon {
@@ -12115,6 +12137,23 @@ a.text-link:hover {
   font-size: 0.75rem;
   color: #999;
   text-transform: capitalize;
+}
+
+.result-arrow {
+  margin-left: 12px;
+  color: #999;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-result-item:hover .result-arrow {
+  opacity: 1;
+  color: #28b76b;
+  transform: translateX(2px);
 }
 
 .result-title mark,

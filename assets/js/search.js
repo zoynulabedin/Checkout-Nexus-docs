@@ -206,11 +206,12 @@ function showSearchResults(query) {
   results.slice(0, 8).forEach((result) => {
     const icon = getResultIcon(result.type);
     const preview = getContentPreview(result.content, query);
+    const safeUrl = result.url.replace(/'/g, "\\'");
 
     resultsHTML += `
-            <div class="search-result-item" onclick="navigateToResult('${
+            <a href="${
               result.url
-            }')">
+            }" class="search-result-item search-result-link" onclick="navigateToResult('${safeUrl}'); return false;">
                 <div class="result-icon">${icon}</div>
                 <div class="result-content">
                     <div class="result-title">${highlightText(
@@ -220,7 +221,10 @@ function showSearchResults(query) {
                     <div class="result-preview">${preview}</div>
                     <div class="result-type">${result.type}</div>
                 </div>
-            </div>
+                <div class="result-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
         `;
   });
 
@@ -228,6 +232,7 @@ function showSearchResults(query) {
 
   container.innerHTML = resultsHTML;
   container.style.display = "block";
+  selectedResultIndex = -1; // Reset selection when new results are shown
 }
 
 function getResultIcon(type) {
@@ -272,14 +277,30 @@ function escapeRegExp(string) {
 function navigateToResult(url) {
   clearSearchResults();
 
+  if (!url || url === "#") {
+    return;
+  }
+
   if (url.startsWith("#")) {
     // Same page anchor
     const element = document.querySelector(url);
     if (element) {
+      // Add a subtle highlight animation to the target element
+      element.style.transition = "background-color 0.3s ease";
+      element.style.backgroundColor = "#fff3cd";
+
       element.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      // Remove highlight after 2 seconds
+      setTimeout(() => {
+        element.style.backgroundColor = "";
+      }, 2000);
     }
+  } else if (url.startsWith("http") || url.startsWith("mailto:")) {
+    // External link
+    window.open(url, "_blank");
   } else {
-    // Different page
+    // Different page or relative URL
     window.location.href = url;
   }
 }
@@ -341,6 +362,7 @@ function clearSearchResults() {
   }
 
   clearSearchHighlights();
+  selectedResultIndex = -1;
 
   // Clear all search inputs
   document.querySelectorAll(".search-input").forEach((input) => {
@@ -371,9 +393,15 @@ function createSearchResultsContainer() {
 }
 
 // Keyboard navigation support
+let selectedResultIndex = -1;
+
 document.addEventListener("keydown", function (e) {
+  const resultsContainer = document.getElementById("search-results-container");
+  const searchResults = document.querySelectorAll(".search-result-item");
+
   if (e.key === "Escape") {
     clearSearchResults();
+    selectedResultIndex = -1;
   }
 
   // Ctrl/Cmd + K to focus search
@@ -385,7 +413,45 @@ document.addEventListener("keydown", function (e) {
       searchInput.select();
     }
   }
+
+  // Arrow key navigation in search results
+  if (
+    resultsContainer &&
+    resultsContainer.style.display !== "none" &&
+    searchResults.length > 0
+  ) {
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      selectedResultIndex = Math.min(
+        selectedResultIndex + 1,
+        searchResults.length - 1
+      );
+      updateSelectedResult(searchResults);
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      selectedResultIndex = Math.max(selectedResultIndex - 1, 0);
+      updateSelectedResult(searchResults);
+    } else if (e.key === "Enter" && selectedResultIndex >= 0) {
+      e.preventDefault();
+      const selectedResult = searchResults[selectedResultIndex];
+      if (selectedResult) {
+        selectedResult.click();
+      }
+    }
+  }
 });
+
+function updateSelectedResult(searchResults) {
+  // Remove previous selection
+  searchResults.forEach((result) => result.classList.remove("selected"));
+
+  // Add selection to current item
+  if (selectedResultIndex >= 0 && selectedResultIndex < searchResults.length) {
+    const selectedResult = searchResults[selectedResultIndex];
+    selectedResult.classList.add("selected");
+    selectedResult.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+}
 
 // Export functions for global access
 window.performDynamicSearch = performDynamicSearch;
